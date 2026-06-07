@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ShopEase Store</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header>
+<h1>ShopEase Online Store</h1>
+</header>
+
+{% for product in products %}
+
+<div class="card">
+
+<h2>{{ product[1] }}</h2>
+
+<p>{{ product[3] }}</p>
+
+<h3>₹{{ product[2] }}</h3>
+
+<a href="/cart">
+<button>Add To Cart</button>
+</a>
+
+</div>
+
+{% endfor %}
+
+</body>
+</html>

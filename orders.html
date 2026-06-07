@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Orders</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Order History</h1>
+
+{% for order in orders %}
+
+<div class="card">
+
+    <h3>{{ order[2] }}</h3>
+
+    <p>Customer: {{ order[1] }}</p>
+
+    <p>Status: {{ order[4] }}</p>
+
+</div>
+
+{% endfor %}
+
+</body>
+</html>

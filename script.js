@@ -1,0 +1,1 @@
+console.log("ShopEase E-Commerce Application Loaded");

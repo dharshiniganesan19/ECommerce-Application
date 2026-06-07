@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Checkout</h1>
+
+<form method="POST" class="container">
+
+    <input type="text"
+           name="customer_name"
+           placeholder="Customer Name"
+           required>
+
+    <input type="text"
+           placeholder="Shipping Address"
+           required>
+
+    <button type="submit">
+        Place Order
+    </button>
+
+</form>
+
+</body>
+</html>
